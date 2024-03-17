@@ -7,8 +7,9 @@ export default function ThemeProvider({ children }) {
 
     return (
         <div className={isDarkMode ? 'dark' : ''}>
-            <div className={isDarkMode ? 'bg-[rgb(16,23,42)] text-gray-200' : 'bg-white text-gray-700 min-h-screen'} >
-                {children}
+            <div className={isDarkMode ? 'bg-[rgb(16,23,42)] text-gray-200' : 'bg-white text-gray-700 '}>
+                <div className="min-h-screen">{children}</div>
+
             </div>
         </div>
     );
